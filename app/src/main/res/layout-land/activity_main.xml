@@ -104,14 +104,14 @@
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
                 android:text="@string/square"
-                android:id="@+id/button"
+                android:id="@+id/btn_Op_Sqr"
                 android:background="@drawable/op_btn_effect"
                 android:textColor="#ffffff"
                 android:textSize="40sp"
                 android:layout_weight="1.18"
                 android:enabled="true"
                 android:clickable="true"
-                android:onClick="clickedNumBtn"
+                android:onClick="clickedOpBtn"
                 android:textAllCaps="false"/>
 
             <Button
@@ -181,7 +181,7 @@
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
                 android:text="@string/pi"
-                android:id="@+id/button2"
+                android:id="@+id/btn_Op_Pi"
                 android:background="@drawable/op_btn_effect"
                 android:textColor="#ffffff"
                 android:textSize="40sp"
@@ -257,14 +257,14 @@
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
                 android:text="@string/square_root"
-                android:id="@+id/button3"
+                android:id="@+id/btn_Op_Sqr_Root"
                 android:background="@drawable/op_btn_effect"
                 android:textColor="#ffffff"
                 android:textSize="40sp"
                 android:layout_weight="1.18"
                 android:enabled="true"
                 android:clickable="true"
-                android:onClick="clickedNumBtn" />
+                android:onClick="clickedOpBtn" />
 
             <Button
                 android:layout_width="0dp"
@@ -332,14 +332,14 @@
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
                 android:text="@string/period"
-                android:id="@+id/button4"
+                android:id="@+id/btn_Op_Dot"
                 android:background="@drawable/op_btn_effect"
                 android:textColor="#ffffff"
                 android:textSize="40sp"
                 android:layout_weight="1.18"
                 android:enabled="true"
                 android:clickable="true"
-                android:onClick="clickedNumBtn" />
+                android:onClick="clickedOpBtn" />
 
             <Button
                 android:layout_width="0dp"

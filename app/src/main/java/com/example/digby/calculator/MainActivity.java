@@ -27,6 +27,13 @@ public class MainActivity extends AppCompatActivity {
     final int ADD = 4;
     static int opChecker = 0;
 
+    //===Math Symbols===
+    final String TIMES_OP = "\u00D7";
+    final String DIVIDE_OP = "\u00f7";
+    final String SQUARE_OP = "\u00B2";
+    final String SQUAREROOT_OP = "\u221a";
+    final String PI = "3.14159265";
+
     //===Error Messages===
     final String TOO_MANY = "too many characters";
     final String NUM_FIRST = "enter number first";
@@ -57,15 +64,15 @@ public class MainActivity extends AppCompatActivity {
 //=============Button Zero===
             case R.id.btn_Num_0: if (displayTop.getText().toString().equals("+")
                     || displayTop.getText().toString().equals("-")
-                    || displayTop.getText().toString().equals("x")
-                    || displayTop.getText().toString().equals("\u00f7"))
+                    || displayTop.getText().toString().equals(TIMES_OP)
+                    || displayTop.getText().toString().equals(DIVIDE_OP))
             {
                 displayBottom.append(displayTop.getText().toString());
                 displayTop.setText("0");
             }else
             displayTop.append("0");
 
-                if (displayTop.getText().toString().length() > 8)
+                if (displayTop.getText().toString().length() > 10)
                 {
                     displayBottom.setText(TOO_MANY);
                 }
@@ -75,15 +82,15 @@ public class MainActivity extends AppCompatActivity {
 //=============Button One===
             case R.id.btn_Num_1: if (displayTop.getText().toString().equals("+")
                     || displayTop.getText().toString().equals("-")
-                    || displayTop.getText().toString().equals("x")
-                    || displayTop.getText().toString().equals("\u00f7"))
+                    || displayTop.getText().toString().equals(TIMES_OP)
+                    || displayTop.getText().toString().equals(DIVIDE_OP))
             {
                 displayBottom.append(displayTop.getText().toString());
                 displayTop.setText("1");
             }else
                 displayTop.append("1");
 
-                if (displayTop.getText().toString().length() > 8)
+                if (displayTop.getText().toString().length() > 10)
                 {
                     displayBottom.setText(TOO_MANY);
                 }
@@ -93,15 +100,15 @@ public class MainActivity extends AppCompatActivity {
 //=============Button Two===
             case R.id.btn_Num_2: if (displayTop.getText().toString().equals("+")
                     || displayTop.getText().toString().equals("-")
-                    || displayTop.getText().toString().equals("x")
-                    || displayTop.getText().toString().equals("\u00f7"))
+                    || displayTop.getText().toString().equals(TIMES_OP)
+                    || displayTop.getText().toString().equals(DIVIDE_OP))
             {
                 displayBottom.append(displayTop.getText().toString());
                 displayTop.setText("2");
             }else
                 displayTop.append("2");
 
-                if (displayTop.getText().toString().length() > 8)
+                if (displayTop.getText().toString().length() > 10)
                 {
                     displayBottom.setText(TOO_MANY);
                 }
@@ -111,15 +118,15 @@ public class MainActivity extends AppCompatActivity {
 //=============Button Three===
             case R.id.btn_Num_3: if (displayTop.getText().toString().equals("+")
                     || displayTop.getText().toString().equals("-")
-                    || displayTop.getText().toString().equals("x")
-                    || displayTop.getText().toString().equals("\u00f7"))
+                    || displayTop.getText().toString().equals(TIMES_OP)
+                    || displayTop.getText().toString().equals(DIVIDE_OP))
             {
                 displayBottom.append(displayTop.getText().toString());
                 displayTop.setText("3");
             }else
                 displayTop.append("3");
 
-                if (displayTop.getText().toString().length() > 8)
+                if (displayTop.getText().toString().length() > 10)
                 {
                     displayBottom.setText(TOO_MANY);
                 }
@@ -129,15 +136,15 @@ public class MainActivity extends AppCompatActivity {
 //=============Button Four===
             case R.id.btn_Num_4: if (displayTop.getText().toString().equals("+")
                     || displayTop.getText().toString().equals("-")
-                    || displayTop.getText().toString().equals("x")
-                    || displayTop.getText().toString().equals("\u00f7"))
+                    || displayTop.getText().toString().equals(TIMES_OP)
+                    || displayTop.getText().toString().equals(DIVIDE_OP))
             {
                 displayBottom.append(displayTop.getText().toString());
                 displayTop.setText("4");
             }else
                 displayTop.append("4");
 
-                if (displayTop.getText().toString().length() > 8)
+                if (displayTop.getText().toString().length() > 10)
                 {
                     displayBottom.setText(TOO_MANY);
                 }
@@ -147,15 +154,15 @@ public class MainActivity extends AppCompatActivity {
 //=============Button Five===
             case R.id.btn_Num_5: if (displayTop.getText().toString().equals("+")
                     || displayTop.getText().toString().equals("-")
-                    || displayTop.getText().toString().equals("x")
-                    || displayTop.getText().toString().equals("\u00f7"))
+                    || displayTop.getText().toString().equals(TIMES_OP)
+                    || displayTop.getText().toString().equals(DIVIDE_OP))
             {
                 displayBottom.append(displayTop.getText().toString());
                 displayTop.setText("5");
             }else
                 displayTop.append("5");
 
-                if (displayTop.getText().toString().length() > 8)
+                if (displayTop.getText().toString().length() > 10)
                 {
                     displayBottom.setText(TOO_MANY);
                 }
@@ -165,15 +172,15 @@ public class MainActivity extends AppCompatActivity {
 //=============Button Six===
             case R.id.btn_Num_6: if (displayTop.getText().toString().equals("+")
                     || displayTop.getText().toString().equals("-")
-                    || displayTop.getText().toString().equals("x")
-                    || displayTop.getText().toString().equals("\u00f7"))
+                    || displayTop.getText().toString().equals(TIMES_OP)
+                    || displayTop.getText().toString().equals(DIVIDE_OP))
             {
                 displayBottom.append(displayTop.getText().toString());
                 displayTop.setText("6");
             }else
                 displayTop.append("6");
 
-                if (displayTop.getText().toString().length() > 8)
+                if (displayTop.getText().toString().length() > 10)
                 {
                     displayBottom.setText(TOO_MANY);
                 }
@@ -183,15 +190,15 @@ public class MainActivity extends AppCompatActivity {
 //=============Button Seven===
             case R.id.btn_Num_7:  if (displayTop.getText().toString().equals("+")
                     || displayTop.getText().toString().equals("-")
-                    || displayTop.getText().toString().equals("x")
-                    || displayTop.getText().toString().equals("\u00f7"))
+                    || displayTop.getText().toString().equals(TIMES_OP)
+                    || displayTop.getText().toString().equals(DIVIDE_OP))
             {
                 displayBottom.append(displayTop.getText().toString());
                 displayTop.setText("7");
             }else
                 displayTop.append("7");
 
-                if (displayTop.getText().toString().length() > 8)
+                if (displayTop.getText().toString().length() > 10)
                 {
                     displayBottom.setText(TOO_MANY);
                 }
@@ -201,15 +208,15 @@ public class MainActivity extends AppCompatActivity {
 //=============Button Eight===
             case R.id.btn_Num_8:  if (displayTop.getText().toString().equals("+")
                     || displayTop.getText().toString().equals("-")
-                    || displayTop.getText().toString().equals("x")
-                    || displayTop.getText().toString().equals("\u00f7"))
+                    || displayTop.getText().toString().equals(TIMES_OP)
+                    || displayTop.getText().toString().equals(DIVIDE_OP))
             {
                 displayBottom.append(displayTop.getText().toString());
                 displayTop.setText("8");
             }else
                 displayTop.append("8");
 
-                if (displayTop.getText().toString().length() > 8)
+                if (displayTop.getText().toString().length() > 10)
                 {
                     displayBottom.setText(TOO_MANY);
                 }
@@ -219,19 +226,38 @@ public class MainActivity extends AppCompatActivity {
 //=============Button Nine===
             case R.id.btn_Num_9:  if (displayTop.getText().toString().equals("+")
                     || displayTop.getText().toString().equals("-")
-                    || displayTop.getText().toString().equals("x")
-                    || displayTop.getText().toString().equals("\u00f7"))
+                    || displayTop.getText().toString().equals(TIMES_OP)
+                    || displayTop.getText().toString().equals(DIVIDE_OP))
             {
                 displayBottom.append(displayTop.getText().toString());
                 displayTop.setText("9");
             }else
                 displayTop.append("9");
 
-                if (displayTop.getText().toString().length() > 8)
+                if (displayTop.getText().toString().length() > 10)
                 {
                     displayBottom.setText(TOO_MANY);
                 }
                 Log.d(LOG, "Button Nine Pressed");
+                break;
+
+//=============Button Pi===
+            case R.id.btn_Op_Pi:
+                if (displayTop.getText().toString().equals("+")
+                    || displayTop.getText().toString().equals("-")
+                    || displayTop.getText().toString().equals(TIMES_OP)
+                    || displayTop.getText().toString().equals(DIVIDE_OP))
+            {
+                displayBottom.append(displayTop.getText().toString());
+                displayTop.setText(PI);
+            }else
+                displayTop.append(PI);
+
+                if (displayTop.getText().toString().length() > 10)
+                {
+                    displayBottom.setText(TOO_MANY);
+                }
+                Log.d(LOG, "Button Pi Pressed");
                 break;
         }
     }
@@ -276,7 +302,7 @@ public class MainActivity extends AppCompatActivity {
                 try {
                     firstNum = Integer.parseInt(displayTop.getText().toString());
                     displayBottom.setText(displayTop.getText().toString());
-                    displayTop.setText("x");
+                    displayTop.setText(TIMES_OP);
                     opChecker = ADD;
                 } catch (java.lang.NumberFormatException e ){
                     displayBottom.setText(NUM_FIRST);
@@ -290,7 +316,7 @@ public class MainActivity extends AppCompatActivity {
                 try {
                     firstNum = Integer.parseInt(displayTop.getText().toString());
                     displayBottom.setText(displayTop.getText().toString());
-                    displayTop.setText("\u00f7");
+                    displayTop.setText(DIVIDE_OP);
                     opChecker = ADD;
                 } catch (java.lang.NumberFormatException e ){
                     displayBottom.setText(NUM_FIRST);
@@ -306,6 +332,48 @@ public class MainActivity extends AppCompatActivity {
                 secondNum = 0;
                 Log.d(LOG, "Button Clear Pressed");
                 break;
+
+//=============Button Dot===
+            case R.id.btn_Op_Dot:if (displayTop.getText().toString().equals("+")
+                    || displayTop.getText().toString().equals("-")
+                    || displayTop.getText().toString().equals(TIMES_OP)
+                    || displayTop.getText().toString().equals(DIVIDE_OP))
+            {
+                displayBottom.append(displayTop.getText().toString());
+                displayTop.setText(".");
+            }else
+                displayTop.append(".");
+
+                if (displayTop.getText().toString().length() > 10)
+                {
+                    displayBottom.setText(TOO_MANY);
+                }
+                Log.d(LOG, "Button Dot Pressed");
+                break;
+
+//=============Button Square===
+            case R.id.btn_Op_Sqr:
+
+                    firstNum = Integer.parseInt(displayTop.getText().toString());
+                    displayBottom.setText(displayTop.getText().toString());
+                displayBottom.append(SQUARE_OP);
+                displayTop.setText(mathCustomSquare());
+
+                Log.d(LOG, "Button Square Pressed");
+                break;
+
+//=============Button Square Root===
+            case R.id.btn_Op_Sqr_Root:
+
+                firstNum = Integer.parseInt(displayTop.getText().toString());
+                String temp = displayTop.getText().toString();
+                displayBottom.setText(SQUAREROOT_OP);
+                displayBottom.append(temp);
+                displayTop.setText(mathCustomSquareRoot());
+
+                Log.d(LOG, "Button Square Root Pressed");
+                break;
+
 
 //=============Button Equals===
             case R.id.btn_Op_Equ: switch (opChecker)
@@ -357,25 +425,35 @@ public class MainActivity extends AppCompatActivity {
     // ===============================================
     // functions to handel the math
     // ===============================================
-    public String mathCustomAdd()
+    public String mathCustomAdd()//Adds two numbers together
     {
 
         finalAnswer = firstNum + secondNum;
         return format.format(finalAnswer);
     }
-    public String mathCustomSub()
+    public String mathCustomSub()//Subtracts one number from another
     {
         finalAnswer = firstNum - secondNum;
         return format.format(finalAnswer);
     }
-    public String mathCustomMulti()
+    public String mathCustomMulti()//Multiplies two numbers
     {
         finalAnswer = firstNum * secondNum;
         return format.format(finalAnswer);
     }
-    public String mathCustomDiv()
+    public String mathCustomDiv()//Divides one number with another
     {
         finalAnswer = firstNum / secondNum;
+        return format.format(finalAnswer);
+    }
+    public String mathCustomSquare()//Squares a single number
+    {
+        finalAnswer = firstNum * firstNum;
+        return format.format(finalAnswer);
+    }
+    public String mathCustomSquareRoot()//Gets the square root of a single number
+    {
+        finalAnswer = Math.sqrt(firstNum);
         return format.format(finalAnswer);
     }
 }
