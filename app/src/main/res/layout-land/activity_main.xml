@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    tools:context="com.example.digby.calculator.MainActivity"
+    android:weightSum="3"
+    android:orientation="vertical"
+    android:background="#b84b4b">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/defaultScreen"
+        android:id="@+id/display_TextView"
+        android:background="#ffffff"
+        android:gravity="center|right"
+        android:textColor="#757575"
+        android:layout_weight="0.7"
+        android:singleLine="false"
+        android:paddingRight="10dp"
+        android:textSize="55sp"
+        android:paddingLeft="0dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:password="false"
+        android:textIsSelectable="false" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/defaultCalcScreen"
+        android:id="@+id/display_CalcTextView"
+        android:background="#ffffff"
+        android:gravity="center|right"
+        android:textColor="#757575"
+        android:layout_weight=".4"
+        android:singleLine="false"
+        android:paddingRight="10dp"
+        android:textSize="30sp"
+        android:paddingLeft="0dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:password="false" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.9"
+        android:weightSum="4">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#1de8b5"
+            android:layout_weight="1"
+            android:weightSum="6" >
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="@string/seven"
+                android:id="@+id/btn_Num_7"
+                android:background="@drawable/num_btn_effect"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:layout_weight="1.18"
+                android:enabled="true"
+                android:clickable="true"
+                android:onClick="clickedNumBtn" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="@string/eight"
+                android:id="@+id/btn_Num_8"
+                android:background="@drawable/num_btn_effect"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:layout_weight="1.18"
+                android:enabled="true"
+                android:clickable="true"
+                android:onClick="clickedNumBtn" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="@string/nine"
+                android:id="@+id/btn_Num_9"
+                android:background="@drawable/num_btn_effect"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:layout_weight="1.18"
+                android:enabled="true"
+                android:clickable="true"
+                android:onClick="clickedNumBtn" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="@string/square"
+                android:id="@+id/button"
+                android:background="@drawable/op_btn_effect"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:layout_weight="1.18"
+                android:enabled="true"
+                android:clickable="true"
+                android:onClick="clickedNumBtn"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="@string/multiply"
+                android:id="@+id/btn_Op_Mul"
+                android:background="@drawable/op_btn_effect"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:layout_weight="1.18"
+                android:enabled="true"
+                android:clickable="true"
+                android:onClick="clickedOpBtn"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/active_green"
+            android:layout_weight="1"
+            android:weightSum="6" >
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="@string/four"
+                android:id="@+id/btn_Num_4"
+                android:background="@drawable/num_btn_effect"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:layout_weight="1.18"
+                android:enabled="true"
+                android:clickable="true"
+                android:onClick="clickedNumBtn" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="@string/five"
+                android:id="@+id/btn_Num_5"
+                android:background="@drawable/num_btn_effect"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:layout_weight="1.18"
+                android:enabled="true"
+                android:clickable="false"
+                android:onClick="clickedNumBtn" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="@string/six"
+                android:id="@+id/btn_Num_6"
+                android:background="@drawable/num_btn_effect"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:layout_weight="1.18"
+                android:enabled="true"
+                android:clickable="true"
+                android:onClick="clickedNumBtn" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="@string/pi"
+                android:id="@+id/button2"
+                android:background="@drawable/op_btn_effect"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:layout_weight="1.18"
+                android:enabled="true"
+                android:clickable="true"
+                android:onClick="clickedNumBtn"
+                android:textAllCaps="false" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="@string/divide"
+                android:id="@+id/btn_Op_Div"
+                android:background="@drawable/op_btn_effect"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:layout_weight="1.18"
+                android:enabled="true"
+                android:clickable="true"
+                android:onClick="clickedOpBtn" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#1de8b5"
+            android:layout_weight="1"
+            android:weightSum="6" >
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="@string/one"
+                android:id="@+id/btn_Num_1"
+                android:background="@drawable/num_btn_effect"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:layout_weight="1.18"
+                android:enabled="true"
+                android:onClick="clickedNumBtn"
+                android:clickable="true" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="@string/two"
+                android:id="@+id/btn_Num_2"
+                android:background="@drawable/num_btn_effect"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:layout_weight="1.18"
+                android:enabled="true"
+                android:clickable="true"
+                android:onClick="clickedNumBtn"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="@string/three"
+                android:id="@+id/btn_Num_3"
+                android:background="@drawable/num_btn_effect"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:layout_weight="1.18"
+                android:enabled="true"
+                android:clickable="true"
+                android:onClick="clickedNumBtn" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="@string/square_root"
+                android:id="@+id/button3"
+                android:background="@drawable/op_btn_effect"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:layout_weight="1.18"
+                android:enabled="true"
+                android:clickable="true"
+                android:onClick="clickedNumBtn" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="@string/minus"
+                android:id="@+id/btn_Op_Sub"
+                android:background="@drawable/op_btn_effect"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:layout_weight="1.18"
+                android:enabled="true"
+                android:clickable="true"
+                android:onClick="clickedOpBtn" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#1de8b5"
+            android:layout_weight="1"
+            android:weightSum="6" >
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="@string/equals"
+                android:id="@+id/btn_Op_Equ"
+                android:background="@drawable/op_btn_effect"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:layout_weight="1.18"
+                android:enabled="true"
+                android:clickable="true"
+                android:onClick="clickedOpBtn" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="@string/zero"
+                android:id="@+id/btn_Num_0"
+                android:background="@drawable/num_btn_effect"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:layout_weight="1.18"
+                android:enabled="true"
+                android:clickable="true"
+                android:onClick="clickedNumBtn" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="@string/clear"
+                android:id="@+id/btn_Op_Cle"
+                android:background="@drawable/op_btn_effect"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:layout_weight="1.18"
+                android:enabled="true"
+                android:clickable="true"
+                android:onClick="clickedOpBtn"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="@string/period"
+                android:id="@+id/button4"
+                android:background="@drawable/op_btn_effect"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:layout_weight="1.18"
+                android:enabled="true"
+                android:clickable="true"
+                android:onClick="clickedNumBtn" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="@string/plus"
+                android:id="@+id/btn_Op_Add"
+                android:background="@drawable/op_btn_effect"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:layout_weight="1.18"
+                android:enabled="true"
+                android:clickable="true"
+                android:onClick="clickedOpBtn" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

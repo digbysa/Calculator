@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple
+    android:color="@color/active_green"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item  android:drawable="@color/num_button_grey">
+        <shape android:shape = "oval">
+            <solid android:color="#ffffff" />
+        </shape>
+    </item>
+</ripple>
+
